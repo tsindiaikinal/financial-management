@@ -1,16 +1,15 @@
-  <template>
-  <div class="container xl">
-    <h1>{{ msg }}</h1>
-    
+ <template>
+  <div class="w-3/4 h-16">
+    <img src="~@/assets/img/money-move.svg" alt="Diagram">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Diagram',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js my project'
+      // msg: 'Hello I am Diargram'
     }
   }
 }
@@ -18,10 +17,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-
-h1, h2 {
-  font-weight: normal;
+img {
+  width: 100%;
 }
-
 </style>
-
