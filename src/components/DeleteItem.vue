@@ -1,10 +1,12 @@
  <template>
-  <div class=""></div>
+  <div class="w-16 h-16 p-4 rounded-full border">
+    <img src="~@/assets/img/trash-icon.svg" alt="Trash icon">
+  </div>
 </template>
 
 <script>
 export default {
-  name: '',
+  name: 'DeleteItem',
   data () {
     return {
     }

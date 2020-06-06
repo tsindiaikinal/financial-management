@@ -1,7 +1,6 @@
 <template>
-  <div class="container flex box-border p-8">
-    <div class="main-section w-3/4" title="Main section">
-      Main page
+  <div class="container flex box-border p-8 border">
+    <div class="main-section relative w-3/4" title="Main section">
       <nav class="flex justify-berween">
         <app-calendar></app-calendar>
         <app-search></app-search>
@@ -11,24 +10,55 @@
         </div>
       </nav>
       <app-diagram></app-diagram>
-      <main>
-        <nav title="display data">Navigation main display data</nav>
-        <section class="p-10" title="data">
+      <main class="">
+        <nav title="display data">
+          <div>
+            <label for="sortbydate">Группировать:</label
+            ><select name="sort_by_date" id="sortbydate">
+              <option value="bydate">По дате</option>
+              <option value="bytime">По времени</option>
+              <option value="byname">По имени</option>
+              <option value="bypay">По оплате</option>
+            </select>
+          </div>
+          <div>
+            <span>Вид: </span>
+            <div>VIEW</div>
+            <div>CALEDAR</div>
+          </div>
+          <div>
+            <div>ALL OPERATION</div>
+            <div>FUTURE</div>
+            <div>PAST</div>
+          </div>
+        </nav>
+        <div>
+          <app-add></app-add>
+        </div>
+        <section class="pt-10 pl-10 pb-12" title="data">
           <!-- COMPONENTS -->
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officia
-          tenetur laborum, at dolor consequatur temporibus ut reiciendis ipsum,
-          qui corrupti ratione ipsa voluptate sapiente eveniet consequuntur
-          recusandae fugiat aliquam!
+          <app-opercard></app-opercard>
+          <app-copy></app-copy>
+          <app-add></app-add>
         </section>
+        <div class="absolute bottom-0 flex justify-between w-3/4 ml-8 pr-2 pb-2">
+          <app-operation></app-operation>
+          <app-delete></app-delete>
+        </div>
       </main>
     </div>
-    <section class="menu-block w-1/4 bg-gray-100">
-      <h3 class="navbar-title text-2x1 font-medium">Все деньги</h3>
+    <section
+      class="flex flex-col justify-between menu-block w-1/4 pt-6 bg-gray-100 rounded-lg"
+    >
       <div class="px-8">
-        <div class="h-64 bg-gray-200 rounded-lg">Scoreboard</div>
+        <div class="flex justify-between pb-3">
+          <h3 class="navbar-title text-2x1 font-medium">Все деньги</h3>
+          <img class="w-8 h-8" src="~@/assets/img/logo.svg" alt="Logo" />
+        </div>
+        <app-scoreboard></app-scoreboard>
         <app-menu></app-menu>
       </div>
-      <div class="w-full text-center border py-2 mt-4">Newage Systems</div>
+      <app-profile></app-profile>
     </section>
   </div>
 </template>
@@ -53,12 +83,12 @@ export default {
 
 .main-section {
   height: 800px;
-  border: 1px solid green;
+  // border: 1px solid green;
 }
 
 main {
   // height: 25%;
-  border: 1px solid green;
+  // border: 1px solid green;
 }
 
 .bg-gray-200 {
@@ -73,12 +103,11 @@ main {
   font-size: 1.375rem;
 }
 
-.navbar-title::after {
-  content: url(~@/assets/img/logo.svg);
+.menu-block {
+  // border: 1px solid grey;
+}
+.fixed {
+  bottom: 5vh;
 }
 
-.menu-block {
-  border: 1px solid grey;
-}
-// a {color: #42b983;}
 </style>
