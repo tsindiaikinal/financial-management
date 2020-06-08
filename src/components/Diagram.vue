@@ -1,6 +1,6 @@
  <template>
-  <div class="w-3/4 h-16">
-    <img src="~@/assets/img/money-move.svg" alt="Diagram">
+  <div class="py-6">
+      <img class="w-3/4 rounded-lg" src="~@/assets/img/money-move.svg" alt="Diagram">
   </div>
 </template>
 
@@ -16,8 +16,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
-img {
-  width: 100%;
-}
-</style>
+<style lang="scss"></style>

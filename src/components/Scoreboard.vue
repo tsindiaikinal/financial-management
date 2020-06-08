@@ -1,17 +1,21 @@
   <template>
-  <div class=" bg-gray-200 rounded-lg">
-    <div class="px-6 pt-1">
-      <div class="text-3xl">{{ count_money[0] }} ₴</div>
-    <div class="text-sm">
-      <div>{{ count_money[1] }} ₴</div>
-      <div>{{ count_money[2] }} $ <span class="text-gray-500">({{ count_money[3] }} ₴)</span></div>
+  <div class="bg-gray-200 pt-1 pb-3 rounded-lg">
+    <div class="px-5">
+      <div class="h-10 pl-2 text-3xl">{{ amount_money[0] }} ₴</div>
+    <div class="flex">
+      <img class="w-3 mb-3" src="~@/assets/img/vector-icon.svg" alt="Vector icon">
+      <div class="pl-1 text-sm">
+        <p class="inline-block transform translate-y-1">{{ amount_money[1] }} ₴</p>
+        <br>
+        <p class="inline-block">{{ amount_money[2] }} $ <span class="text-gray-500">({{ amount_money[3] }} ₴)</span></p>
+      </div>
     </div>
     </div>
-    <hr>
-    <div class="pl-5">
-      <p>{{ name_bank[0] }} {{ count_money[4] }} ₴</p>
-      <p>{{ name_bank[0] }}, $ {{ count_money[2] }} $ </p>
-      <p>{{ name_bank[1] }} {{ count_money[5] }} ₴</p>
+    <hr class="my-2">
+    <div class="px-5 text-xs">
+      <p class="flex justify-between"><span>{{ name_bank[0] }}</span> <span>{{ amount_money[4] }} ₴</span></p>
+      <p class="flex justify-between"><span>{{ name_bank[0] }}, $</span><span>{{ amount_money[2] }} $</span></p>
+      <p class="flex justify-between"><span>{{ name_bank[1] }} </span><span>{{ amount_money[5] }} ₴</span></p>
     </div>
   </div>
 </template>
@@ -21,7 +25,7 @@ export default {
   name: 'Scoreboard',
   data () {
     return {
-      count_money: [
+      amount_money: [
         '738 801',
         '546 568',
         '8 797',
@@ -40,6 +44,9 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
+  hr {
+    border-color: #dcdcdc;
+}
   .text-gray-500 {
     color: rgba(46, 46, 46, 0.5);
   }

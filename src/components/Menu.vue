@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'RightMenu',
+  name: 'Menu',
   data () {
     return {
       menu_text1: 'Операции',
@@ -22,7 +22,6 @@ export default {
       menu_text4: 'Проекты',
       menu_text5: 'Статьи расходов',
       menu_text6: 'Сотрудники'
-      // msg: 'Welcome to Your Vue.js my project'
     }
   }
 }

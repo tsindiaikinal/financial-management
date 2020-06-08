@@ -1,6 +1,6 @@
   <template>
-  <div class="w-2/5 pl-4">
-    <form class="w-5/6" action="" method="post">
+  <div class="w-2/5">
+    <form class="pl-4" action="" method="post">
       <label for="search_data">
       <input class="w-full h-10 border border-gray-400 rounded-lg" type="search" name="search" id="search_data">
       <span></span>

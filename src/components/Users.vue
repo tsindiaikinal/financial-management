@@ -1,11 +1,12 @@
   <template>
-  <div class="w-8 h-8 bg-gray-900 rounded-full">
+  <div class="w-8 h-8 rounded-full border bg-indigo-800">
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AddUser',
+  name: 'Users',
   data () {
     return {
       // msg: 'Welcome to Your Vue.js my project'
