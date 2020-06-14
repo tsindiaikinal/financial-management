@@ -1,5 +1,5 @@
 <template>
-  <div class="container w-full px-8 py-6 flex box-border border">
+  <div class="container w-full h-screen flex justify-between px-8 py-6 flex box-border border">
     <div class="w-3/4">
      <app-navigation></app-navigation>
       <operationlist></operationlist>

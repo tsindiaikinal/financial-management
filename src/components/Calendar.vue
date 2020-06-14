@@ -1,5 +1,5 @@
 <template>
-  <div class="w-48 flex justify-between">
+  <div class="w-48 mr-3 flex justify-between">
     <button class="w-10 h-10 border border-gray-400 rounded-lg"><img class="inline-block h-3" src="~@/assets/img/angle-left.svg" alt="Angle left"></button>
     <div class="table w-24 h-10 mt-0 border border-gray-400 rounded-lg text-center">
      <div class="table-cell month align-middle">Июль</div>

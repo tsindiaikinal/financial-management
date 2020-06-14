@@ -1,5 +1,5 @@
  <template>
-  <div class="w-1/4">
+  <div class="w-1/4 max-w-xs">
   <section
       class="flex flex-col justify-between pt-6 bg-gray-100 rounded-lg"
     >

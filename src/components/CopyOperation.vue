@@ -1,5 +1,5 @@
  <template>
-  <div class="flex justify-between items-center w-full">
+  <div class="w-full my-4 flex justify-between items-center">
     <hr class="w-2/5" />
     <span class="text-color w-1/3 text-center pb-0 font-medium">
       Копировать операцию
